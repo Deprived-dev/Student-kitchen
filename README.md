@@ -3,7 +3,12 @@
 A beginner Java project that will grow as I learn more about Java. New features and quality-of-life improvements will be added over time.
 The current version includes three sample recipes to demonstrate the application's features. My long-term goal is to let users create, edit, and manage their own recipes, along with pantry tracking, budgeting, and recipe filtering.
 
-## Features (v0.1)
+## Updates
+- (v0.2)
+- [x] Added a 'Suprise me' feature
+- [x] Simplified some of the codes
+
+- (v0.1)
 - [x] View available recipes
 - [x] Choose a recipe by name from the menu
 - [x] Display recipe ingradients
@@ -29,5 +34,3 @@ The current version includes three sample recipes to demonstrate the application
 ## Author
 
 Made by Deprived-Dev
-
-ev
