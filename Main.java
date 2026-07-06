@@ -7,11 +7,17 @@ public class Main {
 
         System.out.println("Student kitchen");
 
-        System.out.println("===Available recipes===");
-        String[] food = {"1. Fried egg", "2. Fried rice", "3. Instant noodles"};
-        System.out.println(food[0]);
-        System.out.println(food[1]);
-        System.out.println(food[2]);
+String[] recipes = {
+                "Fried egg",
+                "Fried rice",
+                "Instant noodles",
+                "Surprise me"
+        };
+
+        for (int i = 0; i < recipes.length; i++) {
+            System.out.println(recipes[i]);
+        }
+        int choice = random.nextInt(recipes.length);
 
         String[] friedEgg = {
                 "1 egg",
@@ -38,20 +44,27 @@ public class Main {
         System.out.print("Choose what you want to eat: ");
         String answer= scanner.nextLine();
 
-        if (answer.equalsIgnoreCase(food[0])){
+        if (answer.equalsIgnoreCase("Surprise me")) {
+            answer = recipes[random.nextInt(recipes.length - 1)];
+            System.out.println("Your surprise recipe is..." );
+            System.out.println(answer);
+        }
+        if (answer.equalsIgnoreCase(recipes[0])){
             System.out.println("Ingredients: ");
             for (String ingredient: friedEgg) {
                 System.out.println("- " + ingredient);
             }
-        } else if (answer.equalsIgnoreCase(food[1])) {     
+        } else if (answer.equalsIgnoreCase(recipes[1])) {
             System.out.println("Ingredients: ");
             for (String ingredients : friedRice)
                 System.out.println("- " + ingredients);
-        } else if (answer.equalsIgnoreCase(food[2])){
+        } else if (answer.equalsIgnoreCase(recipes[2])){
             System.out.println("Ingredients: ");
             for (String ingredients : instantNoodles) {
                 System.out.println("- " + ingredients);
             }
-        }    
+        } else {
+            System.out.println("Oops! That's unavailable!");
+        }
     }
 }
