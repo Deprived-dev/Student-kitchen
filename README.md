@@ -6,7 +6,7 @@ The current version includes three sample recipes to demonstrate the application
 ## Updates
 - (v0.2)
 - [x] Added a 'Suprise me' feature
-- [x] Simplified some of the codes
+- [x] Simplified some of the codes using arrays and loops
 
 - (v0.1)
 - [x] View available recipes
